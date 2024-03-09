@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ping_track/project/home.dart';
 
 void main(){
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -13,10 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor: Color(0xff121112),
-        appBarTheme: AppBarTheme(backgroundColor: Color(0xff121112))
+        scaffoldBackgroundColor: const Color(0xff121112),
+        appBarTheme: const AppBarTheme(backgroundColor: Color(0xff121112))
       ),
-      home: MainShell(),
+      home: const MainShell(),
     );
   }
 }
