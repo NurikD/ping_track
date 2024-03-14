@@ -122,6 +122,7 @@ class _MainShellState extends State<MainShell> {
               width: MediaQuery.of(context).size.width * 0.01,
             ),
             Expanded(
+              // второй контейнер(график)
               flex: 4,
               child: Column(
                 children: [
@@ -219,11 +220,39 @@ class _MainShellState extends State<MainShell> {
                       ),
                     ),
                   ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height * 0.02,
+                  ),
+                  Row(
+                    children: [
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          primary: Color(0xff201F20),
+                          minimumSize: Size(70, 50)
+                        ),
+                          onPressed: () {},
+                          child: Text(
+                            'ya.ru',
+                            style: TextStyle(color: Colors.white),
+                          )),
+                          SizedBox(
+                            width: MediaQuery.of(context).size.width * 0.01,
+                          ),
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          primary: Color(0xff201F20),
+                          minimumSize: Size(70, 50)
+                        ),
+                          onPressed: () {},
+                          child: Text(
+                            'Скачать',
+                            style: TextStyle(color: Colors.white),
+                          )),
+                    ],
+                  )
                 ],
               ),
             ),
-
-// Здесь добавьте функции для заголовков осей...
           ],
         ),
       ),
